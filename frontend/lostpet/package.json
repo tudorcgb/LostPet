@@ -1,0 +1,14 @@
+{
+  "name": "lostpet",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tudorcgb/lostpet.git"
+  },
+  "dependencies": {
+    "@google-cloud/nodejs-repo-tools": "^3.3.0"
+  }
+}

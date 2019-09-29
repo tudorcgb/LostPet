@@ -1,0 +1,44 @@
+<div >
+    <div class="col-md-4" align="center">
+        <ul class="list-inline social-buttons">
+            <button  onclick="location.href='#!/admin'" type="submit" class="btn btn-primary">
+                users
+            </button>
+            <button onclick="location.href='#!/admin/breeds'" type="submit"  class="btn btn-primary">
+                breeds
+            </button>
+            <button onclick="location.href='#!/admin/listings'" type="submit" class="btn btn-primary">
+                listings
+            </button>
+        </ul>
+    </div>
+    <table class="table table-bordered table-hover table-condensed">
+        <tr style="font-weight: bold">
+            <td style="width:100%">Name</td>
+        </tr>
+        <tr ng-repeat="breed in breeds">
+            <td>
+                <span editable-text="breed.name" e-name="name" e-form="rowform" onbeforesave="checkName($data, breed.id)">
+                    {{ breed.name || 'empty' }}
+                </span>
+            </td>
+            <td style="white-space: nowrap">
+                <!-- form -->
+                <form editable-form name="rowform" onbeforesave="saveBreed($data, breed)" ng-show="rowform.$visible" class="form-buttons form-inline" shown="inserted == breed">
+                    <button type="submit" ng-disabled="rowform.$waiting" class="btn btn-primary">
+                        save
+                    </button>
+                    <button type="button" ng-disabled="rowform.$waiting" ng-click="rowform.$cancel()" class="btn btn-default">
+                        cancel
+                    </button>
+                </form>
+                <div class="buttons" ng-show="!rowform.$visible">
+                    <button type="button" class="btn btn-primary" ng-click="rowform.$show()">edit</button>
+                    <button type="button" class="btn btn-danger" ng-click="removeBreed($index)">del</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <button type="button" class="btn btn-default" ng-click="addBreed()">Add row</button>
+</div>

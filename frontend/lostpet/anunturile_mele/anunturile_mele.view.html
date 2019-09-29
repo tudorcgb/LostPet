@@ -1,0 +1,21 @@
+<div class="gridListdemoBasicUsage">
+        <h1>Anunturile Mele:</h1>
+        <div  class='md-padding' layout="row" layout-wrap>
+              <md-card style="width: 300px;" ng-repeat="listing in listings" >
+                  <md-card-actions layout="row" layout-align="center center">
+                      <md-button ng-click="editClicked(listing.id)" class="" style="margin-right:40px; padding:0; height:50px; min-height:1px;" >
+                          <md-icon aria-label="Edit" class="material-icons" style="font-size:30px; min-height:1px;">edit</md-icon>
+                      </md-button>
+                      <md-button ng-click="deleteClicked(listing.id)"  class="" style="margin-right:40px; padding:0; height:50px; min-height:1px;" >
+                          <md-icon aria-label="Delete" class="material-icons" style="font-size:30px; min-height:1px;">delete</md-icon>
+                      </md-button>
+                  </md-card-actions>
+                <img  ng-src="{{baseAPIGlobal}}/images/files/{{listing.imgUrl}}" class="md-card-image" style="height: 300px;"   err-src="assets/img/dog_face_large.png">
+                <md-card-content style="flex-wrap: wrap;" >
+                  <h2>{{listing.title}}</h2>
+                  <p>{{listing.abstractField}}</p>
+                </md-card-content>
+
+              </md-card>
+            </div>
+    </div>

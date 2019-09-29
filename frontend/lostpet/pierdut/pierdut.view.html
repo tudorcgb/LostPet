@@ -1,0 +1,32 @@
+<form method="post">
+    <div class=" col-md-12 col-md-offset">
+        <div class="input-group">
+            <div class="input-group-btn">
+                <select style="  background-color: #343a40; color: #FFFFFF;" class="form-control" ng-value="rasa.id" name="breed_id" ng-model="selectedBreed" ng-options="rasa.name for rasa in rase track by rasa.id" >
+                    <option style="background-color: #343a40; color: #FFFFFF;" class="form-control" value="" disabled selected hidden> Rasa :</option>
+                </select>
+
+            </div>
+            <div class="form-group"><input id="pac-input" ng-model="advert.adress" class="form-control" type="text" placeholder="Locatia "></div>
+            <input type="text" class="form-control button_search" ng-model="searchParams.searchString" placeholder="Titlu anunt..." />
+            <span class="input-group-btn">
+            <button class="btn button_search" ng-click="searchByParams()" type="submit" style=" color: #FFFFFF; background-color: #343a40;">
+            <span ></span> Cauta</button>
+            </span>
+        </div>
+    </div>
+</form>
+<div class="gridListdemoBasicUsage">
+        <h1>{{titluPagina}} </h1>
+        <div  class='md-padding' layout="row" layout-wrap>
+              <md-card style="width: 300px;" ng-repeat="listing in listings" ng-click="goToDetaliiAnunt(listing.id)">
+                <img ng-src="{{baseAPIGlobal}}/images/files/{{listing.imgUrl}}"  err-src="assets/img/dog_face_large.png" class="md-card-image" style="height: 300px;" >
+                <md-card-content>
+                  <h2>{{listing.title}}</h2>
+                  <p>{{listing.abstractField}}</p>
+                </md-card-content>
+
+              </md-card>
+            </div>
+    </div>
+

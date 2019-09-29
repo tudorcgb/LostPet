@@ -1,0 +1,70 @@
+<div >
+    <div class="col-md-4" align="center">
+        <ul class="list-inline social-buttons">
+            <button  onclick="location.href='#!/admin'" type="submit" class="btn btn-primary">
+                users
+            </button>
+            <button onclick="location.href='#!/admin/breeds'" type="submit"  class="btn btn-primary">
+                breeds
+            </button>
+            <button onclick="location.href='#!/admin/listings'" type="submit" class="btn btn-primary">
+                listings
+            </button>
+        </ul>
+    </div>
+    <table class="table table-bordered table-hover table-condensed">
+        <tr style="font-weight: bold">
+            <td style="width:20%">Title</td>
+            <td style="width:20%">Abstract</td>
+            <td style="width:20%">Body</td>
+            <td style="width:20%">Rasa</td>
+            <td style="width:20%">TipAnunt</td>
+
+        </tr>
+        <tr ng-repeat="listing in listings">
+            <td>
+                <span editable-text="listing.title" e-name="title" e-form="rowform" onbeforesave="checkName($data, user.id)">
+                    {{ listing.title || 'empty' }}
+                </span>
+            </td>
+            <td>
+                <span editable-text="listing.abstractField" e-name="abstractField" e-form="rowform" onbeforesave="checkName($data, user.id)">
+                    {{ listing.abstractField || 'empty' }}
+                </span>
+            </td>
+            <td>
+                <span editable-text="listing.body" e-name="body" e-form="rowform" onbeforesave="checkAddress($data, user.id)">
+                    {{ listing.body || 'empty' }}
+                </span>
+            </td>
+            <td>
+                <span editable-select="listing.breed.id" e-name="breedName" e-form="rowform" e-ng-options="breed.id as breed.name for breed in breeds">
+                    {{ listing.breed.name}}
+                </span>
+            </td>
+            <td>
+                <span editable-select="listing.pierdut.id" e-name="breedName" e-form="rowform" e-ng-options="type.value as type.name for type in types">
+                    {{ showType(listing) }}
+                </span>
+            </td>
+
+            <td style="white-space: nowrap">
+                <!-- form -->
+                <form editable-form name="rowform" onbeforesave="saveListing($data, user)" ng-show="rowform.$visible" class="form-buttons form-inline" shown="inserted == listing">
+                    <button type="submit" ng-disabled="rowform.$waiting" class="btn btn-primary">
+                        save
+                    </button>
+                    <button type="button" ng-disabled="rowform.$waiting" ng-click="rowform.$cancel()" class="btn btn-default">
+                        cancel
+                    </button>
+                </form>
+                <div class="buttons" ng-show="!rowform.$visible">
+                    <button type="button" class="btn btn-primary" ng-click="rowform.$show()">edit</button>
+                    <button type="button" class="btn btn-danger" ng-click="removeListing($index)">del</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <button type="button" class="btn btn-default" ng-click="addUser()">Add row</button>
+</div>

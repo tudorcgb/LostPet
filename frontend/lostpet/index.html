@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>-->
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/css/Article-Clean.css?h=5d2455e1fa7653ce290cec1c4efa33f9">
+    <link rel="stylesheet" href="assets/css/Article-List.css?h=cec575f25bba55cfaa10100750e76412">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css?h=b5fa5c5975fbae1a2cc1902f8a8b41cc">
+    <link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/angular/bower-material/v0.10.1-rc4/angular-material.css">
+    <link rel="stylesheet" href="assets/css/Profile-Edit-Form-1.css" />
+    <link rel="stylesheet" href="assets/css/Profile-Edit-Form.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular-route.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular-cookies.min.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.min.js"></script>
+    <!--<script src="https://gitcdn.xyz/repo/angular/bower-material/v0.10.1-rc4/angular-material.js"></script>-->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/assets-cache.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
+    <script src="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.12/angular-material.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - LostPet</title>
+    <!-- add icon link -->
+    <link rel = "icon" href="assets/img/dog_face.png" type = "image/x-icon">
+    <meta name="description" content="Gaseste stapanul unui caine pierdut sau posteaza un anunt daca ti-ai pierdut cainele!">
+</head>
+<body id="page-top">
+<nav class="navbar navbar-dark navbar-expand-lg static-top bg-dark" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#!/home">
+        <img src="assets/img/dog_face.png" style="color: rgb(254,197,3);margin: 8px;">LostPet</a>
+        <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarResponsive" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="nav navbar-nav ml-auto text-uppercase">
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#!/gasit">CAini Gasiti</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#!/pierdut" style="margin-right: 120px;">Caini Pierduti</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#!/anunt" style="margin-right: 120px;">Adauga un anunt</a></li>
+                <li ng-if="loggedIn" class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#!/chat">Chat</a></li>
+                <li class="nav-item dropdown" ng-if="loggedIn">
+
+                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" >Contul Meu </a>
+                    <div class="dropdown-menu" role="menu">
+                        <a ng-if="isAdmin" class="dropdown-item" role="presentation" href="#!/admin">AdminView</a>
+                        <a class="dropdown-item" role="presentation" href="#!/anunturile_mele">Anunturile Mele</a>
+                        <a class="dropdown-item" role="presentation" href="#!/profil">Setarii cont</a>
+
+                        <a class="dropdown-item" role="presentation" href="#!/login">Deconectare</a>
+                    </div>
+                </li>
+                <li ng-if="!loggedIn" class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#!/login">Log in</a></li>
+                <li ng-if="!loggedIn" class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#!/register">Cont Nou</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid">
+        <div class="container">
+
+                <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+                <div ng-view>
+                </div>
+            <!--</div>-->
+        </div>
+    </div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"><span class="copyright">Copyright&nbsp;© 2018 Cabau Tudor </span></div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li class="list-inline-item"><a href="https://github.com/tudorcgb"><i class="fa fa-github"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/tudor-cabau/"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    <li class="list-inline-item"><a  href="#!/license">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="app.js"></script>
+    <script src="app-services/authentication.service.js"></script>
+    <script src="app-services/flash.service.js"></script>
+    <script src="app-services/file-reader.js"></script>
+
+    <!-- Real user service that uses an api -->
+     <script src="app-services/user.service.js"></script>
+    <script src="app-services/listing.service.js"></script>
+    <script src="app-services/comments.service.js"></script>
+    <script src="app-services/chat.service.js"></script>
+    <script src="app-services/chat.comment.service.js"></script>
+    <script src="app-services/breed.service.js"></script>
+
+    <!-- Fake user service for demo that uses local storage -->
+    <!--<script src="app-services/user.service.local-storage.js"></script>-->
+
+    <script src="anunt/anunt.controller.js"></script>
+    <script src="home/home.controller.js"></script>
+    <script src="login/login.controller.js"></script>
+    <script src="register/register.controller.js"></script>
+    <script src="pierdut/pierdut.controller.js"></script>
+    <script src="anunturile_mele/anunturile_mele.controller.js"></script>
+    <script src="profil/profil.controller.js"></script>
+    <script src="anunt_details/anunt_details.controller.js"></script>
+    <script src="chat/chat.controller.js"></script>
+    <script src="admin/admin.controller.js"></script>
+    <script src="admin/breed/breed.controller.js"></script>
+    <script src="admin/listings/listings.controller.js"></script>
+
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-xeditable/0.9.0/css/xeditable.min.css" />-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-xeditable/0.9.0/css/xeditable.css" />-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-xeditable/0.9.0/js/xeditable.js"></script>-->
+    <script src="http://vitalets.github.io/angular-xeditable/dist/js/xeditable.js"></script>
+    <script src="https://code.angularjs.org/1.5.8/angular-mocks.js"></script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPSHZEiHzPFZf3QQs0EKWPFpn3RbZ4MFA&libraries=places&callback=initAutocomplete" async defer></script>
+</body>
+</html>

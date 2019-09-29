@@ -1,0 +1,13 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: lostpet/index.html
+  upload: lostpet/index.html
+  
+
+- url: /(.*)
+  static_files: lostpet/\1
+  upload: lostpet/(.*)

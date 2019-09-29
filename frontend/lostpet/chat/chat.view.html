@@ -1,0 +1,97 @@
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .row {
+        display: flex;
+    }
+    .column {
+        flex: 70%;
+        padding: 10px;
+
+    }
+    .columnLeft {
+        flex: 30%;
+        padding: 10px;
+
+    }
+    a { color: #FF0000; }
+</style>
+<div class="card">
+    <div class="card-body" style="height:133px;" ng-repeat="comment in comments">
+        <ul class="list-group" >
+            <li class="list-group-item" style="margin-bottom:6px;">
+
+                <div class="media" style="overflow:visible;">
+                    <!--<div><img src="{{baseAPIGlobal}}/images/files/poza_{{comment.user}}.jpg"  class="mr-3" style="width: 25px; height:25px;" />-->
+                    <!--</div>-->
+                    <div class="media-body" style="overflow:visible;">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p><a href="#">{{comment.username}}</a>:
+                                    <br />
+                                    {{comment.comment}}<br />
+                                    <small class="text-muted">{{comment.date}}</small>
+                                    <md-button ng-if="comment.belongsToUser" ng-click="deleteClicked(comment.id)"  class="" style="margin-right:40px; margin-top:-10px; margin-bottom:-10px;padding:0; height:30px; min-height:1px;" >
+                                        <md-icon aria-label="Delete" class="material-icons" style="font-size:20px; min-height:1px;">delete</md-icon>
+                                    </md-button>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="columnLeft" style="background-color:#b5d0fc;">
+        <div class="card-body" style="height:80px;" ng-repeat="chat in chats" >
+            <ul class="list-group" ng-click="chatSelected(chat)"  >
+                <li class="list-group-item" style="">
+                    <div class="media" style="overflow:visible;">
+                        <div>
+                            <img ng-src="{{baseAPIGlobal}}/images/files/poza_{{chat.otherUser.id}}.jpg"  err-src="assets/img/profile.png" class="avatar-bg center image mr-3" style="width: 50px; height:50px;border-radius: 50%;" />
+                        </div>
+                        <div class="media-body" style="overflow:visible;">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>
+                                       <span> {{chat.otherUser.username}} :</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div  class="column" style="background-color:#d8e7ff;">
+        <div class="row" style="overflow-y: scroll;  height: 500px;">
+            <div class="col-md-12">
+                <table id="conversation" class="table">
+                    <thead>
+                    <tr>
+                        <th>Conversatia cu: {{otherUser.username}}</th>
+                    </tr>
+                    </thead>
+                    <tbody  id="chat_box">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <form ng-hide="!selectedChatTrue"  method='post' style="margin-top:20px;">
+            <div class=" card-text form-group">
+                <textarea id="message_textarea" placeholder="Message"  rows="4" class="form-control form-control-lg" ng-model="newCommentMessage"></textarea>
+            </div>
+            <div class="form-row">
+                <div class="col-md-12 content-right">
+                    <button  class="btn btn-primary form-btn fa fa-comment" ng-click="sendMessage()" type="submit"> Trimite Mesaj </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

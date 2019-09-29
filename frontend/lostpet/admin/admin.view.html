@@ -1,0 +1,75 @@
+<div >
+    <div class="col-md-4" align="center">
+        <ul class="list-inline social-buttons">
+            <button  onclick="location.href='#!/admin'" type="submit" class="btn btn-primary">
+                users
+            </button>
+            <button onclick="location.href='#!/admin/breeds'" type="submit"  class="btn btn-primary">
+                breeds
+            </button>
+            <button onclick="location.href='#!/admin/listings'" type="submit" class="btn btn-primary">
+                listings
+            </button>
+        </ul>
+    </div>
+    <table class="table table-bordered table-hover table-condensed">
+        <tr style="font-weight: bold">
+            <td style="width:20%">Username</td>
+            <td style="width:15%">Password</td>
+            <td style="width:20%">Address</td>
+            <td style="width:20%">Email</td>
+            <td style="width:20%">Telephone</td>
+            <td style="width:20%">Image Url</td>
+        </tr>
+        <tr ng-repeat="user in users">
+            <td>
+                <span editable-text="user.username" e-name="username" e-form="rowform" onbeforesave="checkName($data, user.id)">
+                    {{ user.username || 'empty' }}
+                </span>
+            </td>
+            <td>
+                <span editable-text="user.password" e-name="password" e-form="rowform" onbeforesave="checkName($data, user.id)">
+                    {{ user.password || 'empty' }}
+                </span>
+            </td>
+            <td>
+                <span editable-text="user.address" e-name="address" e-form="rowform" onbeforesave="checkAddress($data, user.id)">
+                    {{ user.address || 'empty' }}
+                </span>
+            </td>
+            <td>
+                <span editable-text="user.email" e-name="email" e-form="rowform" onbeforesave="checkAddress($data, user.id)">
+                    {{ user.email || 'empty' }}
+                </span>
+            </td>
+            <td>
+                <span editable-text="user.telephone" e-name="telephone" e-form="rowform" onbeforesave="checkAddress($data, user.id)">
+                    {{ user.telephone || 'empty' }}
+                </span>
+            </td>
+            <td>
+                <span editable-text="user.imgUrl" e-name="imgUrl" e-form="rowform" onbeforesave="checkAddress($data, user.id)">
+                    {{ user.imgUrl || 'empty' }}
+                </span>
+            </td>
+
+            <td style="white-space: nowrap">
+                <!-- form -->
+                <form editable-form name="rowform" onbeforesave="saveUser($data, user)" ng-show="rowform.$visible" class="form-buttons form-inline" shown="inserted == user">
+                    <button type="submit" ng-disabled="rowform.$waiting" class="btn btn-primary">
+                        save
+                    </button>
+                    <button type="button" ng-disabled="rowform.$waiting" ng-click="rowform.$cancel()" class="btn btn-default">
+                        cancel
+                    </button>
+                </form>
+                <div class="buttons" ng-show="!rowform.$visible">
+                    <button type="button" class="btn btn-primary" ng-click="rowform.$show()">edit</button>
+                    <button type="button" class="btn btn-danger" ng-click="removeUser($index)">del</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <button type="button" class="btn btn-default" ng-click="addUser()">Add row</button>
+</div>

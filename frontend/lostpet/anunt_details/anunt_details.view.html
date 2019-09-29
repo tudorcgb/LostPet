@@ -1,0 +1,67 @@
+<div class="container" >
+    <div class="row">
+        <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+            <div class="intro">
+                <h1 class="text-center">{{listingDetails.title}}</h1>
+                <p class="text-center">
+                    <span class="by">Postat de: </span> <a href="#!/detalii_user/{{listingDetails.writer.id}}">{{listingDetails.writer.name}}</a>
+                    <div class="text">
+                        <figure class="center">
+                            <img  ng-src="{{baseAPIGlobal}}/images/files/{{imageSrc}}" width=70%  err-src="assets/img/dog_face_large.png" >
+                            <figcaption>{{listingDetails.title}}</figcaption>
+                        </figure>
+                <p class="text">
+                    <span style="font-weight:bold;">Rasa: </span> <a href="#">{{listingDetails.breed.name}}</a>
+                <p class="text">
+                    <span style="font-weight:bold;">Zona: </span> <a >{{listingDetails.adress}}</a>
+                <p style="font-weight:bold;">Descriere anunt:</p>
+
+                <p>{{listingDetails.body}}</p>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Comentarii: </h3>
+                </div>
+                <div class="card-body" style="height:133px;" ng-repeat="comment in comments">
+                    <ul class="list-group" >
+                        <li class="list-group-item" style="margin-bottom:6px;">
+
+                            <div class="media" style="overflow:visible;">
+                                <div><img ng-src="{{baseAPIGlobal}}/images/files/poza_{{comment.user}}.jpg"   err-src="assets/img/profile.png" class="mr-3" style="width: 25px; height:25px;" />
+                                </div>
+                                <div class="media-body" style="overflow:visible;">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p><a href="#!/detalii_user/{{comment.user}}">{{comment.username}}</a> a spus:
+                                                <br />
+                                                {{comment.comment}}<br />
+                                                <small class="text-muted">{{comment.date}}</small>
+                                                <md-button ng-if="comment.belongsToUser" ng-click="deleteClicked(comment.id)"  class="" style="margin-right:40px; margin-top:-10px; margin-bottom:-10px;padding:0; height:30px; min-height:1px;" >
+                                                    <md-icon aria-label="Delete" class="material-icons" style="font-size:20px; min-height:1px;">delete</md-icon>
+                                                </md-button>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <form  method='post' style="margin-top:20px;">
+                <div class=" card-text form-group">
+                    <textarea placeholder="Message" rows="4" class="form-control form-control-lg" ng-model="newComment"></textarea>
+                </div>
+                    <div class="form-row">
+                        <div class="col-md-12 content-right">
+                            <button class="btn btn-primary form-btn fa fa-comment" ng-click="addComment()" type="submit">  Comment </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>

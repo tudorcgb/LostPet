@@ -1,0 +1,54 @@
+<body>
+<div >
+    <div class="register-photo">
+        <div class="form-container">
+            <label  class="btn btn-default btn-file">
+                <input style="display: none;" type="file" ng-file-select="vm.onFileSelect()" ng-model="imageSrc" >
+                <img ng-src="{{imageSrc}}"style="width:100%;height:100%;">
+            </label>
+            <form method="post" style="width: 60%;vertical-align: middle;">
+                <h2 class="text-center">Posteaza un anunt.</h2>
+                <div class="form-group">
+                    <select class="form-control" name="tip_anunt" ng-model="tipAnunt" required
+                            oninvalid="this.setCustomValidity('Alegerea ununi tip de anunt este necesara')"
+                            oninput="this.setCustomValidity('')" >
+                        <option class="form-control" value="" disabled selected>Pierdut Sau Gasit :</option>
+                        <option class="form-control" ng-selected="pierdutSelected" value="true" >Pierdut</option>
+                        <option class="form-control" ng-selected="gasitSelected" value="false" >Gasit</option>
+                    </select>
+                </div>
+                <div class="form-group"><input class="form-control" type="title" name="titlu" placeholder="Titlu" ng-model="advert.title"
+                                               required
+                                               oninvalid="this.setCustomValidity('Campul de titlu este necesar')"
+                                               oninput="this.setCustomValidity('')" ></div>
+                <div class="form-group"><input class="form-control" type="text" name="scurta_descriere" placeholder="Scurta Descriere" ng-model="advert.abstractField" required
+                                                oninvalid="this.setCustomValidity('Campul de scurta descriere este necesar')"
+                                               oninput="this.setCustomValidity('')" ></div>
+                <div class="form-group">
+                    <select class="form-control" ng-value="rasa.id" name="breed_id" ng-model="selectedRasa" ng-options="rasa.name for rasa in rase track by rasa.id" required
+                             oninvalid="this.setCustomValidity('Alegerea unei rase este necesara')"
+                            oninput="this.setCustomValidity('')" >
+                    <option class="form-control" value="" disabled selected>Rasa :</option>
+                    </select>
+                </div>
+
+                <div class="form-group"><input id="address_input" ng-model="advert.adress" class="form-control" type="text" placeholder="Address Search Box"
+                                               required oninvalid="this.setCustomValidity('Alegerea unei locatii este necesara')"
+                                               oninput="this.setCustomValidity('')" ></div>
+
+                <div class="form-group">
+                    <textarea class="form-control" type="text" name="descriere" placeholder="Descriere" rows="5" style="height: 110px" ng-model="advert.body"
+                                               required oninvalid="this.setCustomValidity('Campul de descriere este necesar')"
+                              oninput="this.setCustomValidity('')" ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button ng-click="uploadFile($files)" class="btn btn-primary btn-block" type="submit" value="Submit">Posteaza</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</body>
