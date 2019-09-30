@@ -1,0 +1,6 @@
+rootProject.name = 'LostPet'
+
+include 'common'
+include 'backend'
+include 'frontend'
+

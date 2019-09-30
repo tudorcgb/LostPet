@@ -1,0 +1,1497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/ListingRestController.java" line="65" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3b23c223-b6de-4f64-a267-16e32579948d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/LostPet_Project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/SimpleCORSFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/chat/config/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/chat/controller/ChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/chat/model/ChatMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/entity/Breed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/entity/Chat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/entity/ChatComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/entity/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mail/connection/AbstractServerConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mail/consumers/MainConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mail/services/MailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mail/services/WriteToFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mapper/BreedMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mapper/ChatCommentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mapper/ChatMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mapper/ChatMappper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mapper/CommentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mapper/ListingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/repository/BreedRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/repository/ChatCommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/repository/ChatRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/repository/CommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/repository/ListingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/BreedApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/ChatApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/ChatCommentApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/CommentRestApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/StorageApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/TestApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/BreedRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/CategoryRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/ChatCommentRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/ChatRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/CommentRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/FileUploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/ListingRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/BreedService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/ChatCommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/ChatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/FileSystemStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/ListingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/BreedServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/ChatCommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/ChatServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/ListingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/storage/StorageException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/storage/StorageFileNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/storage/StorageProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/templates/dog-face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tudor/dto/ChatDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tudor/dto/CommentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tudor/dto/MailDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tudor/dto/SearchParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tudor/dto/UsernameIdDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_lostdog/11549576270661.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_lostdog/dog-face.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build/classes/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/BackendApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/entity/Article.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/entity/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/mapper/ArticleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/mapper/ArticleMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/mapper/CategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/mapper/CategoryMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/mapper/UserMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/repository/ArticleRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/repository/CategoryRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/rest/ArticleRestApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/rest/CategoryRestApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/rest/UserRestApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/rest/impl/ArticleRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/rest/impl/CategoryRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/rest/impl/UserRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/service/ArticleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/service/CategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/service/impl/ArticleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/service/impl/CategoryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/classes/main/com/tudor/backend/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/generated/source/apt/main/com/tudor/backend/mapper/ArticleMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/generated/source/apt/main/com/tudor/backend/mapper/CategoryMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/generated/source/apt/main/com/tudor/backend/mapper/UserMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/libs/backend-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build/libs/backend-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/BackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/SecSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/SecSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/entity/Listing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/mapper/ArticleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/mapper/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mapper/CategoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/repository/ArticleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/rest/ArticleRestApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/ListingRestApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/rest/CategoryRestApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/CategoryRestApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/rest/UserRestApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/UserRestApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/rest/impl/ArticleRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/rest/impl/CategoryRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/rest/impl/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/NotificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/rest/impl/UserRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/UserRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/service/ArticleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/service/impl/ArticleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/service/impl/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/NotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tudor/backend/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/com/tudor/dto/ArticleDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/com/tudor/dto/CategoryDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/com/tudor/dto/CategoryDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/com/tudor/dto/NameIdDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/com/tudor/dto/NameIdDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/com/tudor/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/com/tudor/dto/UserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/com/tudor/enumeration/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/com/tudor/enumeration/UserRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/libs/common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/libs/common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/tudor/dto/ArticleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/tudor/dto/ListingDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/tudor/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/tudor/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/com/tudor/frontend/FrontendApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/com/tudor/frontend/conf/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/classes/java/main/com/tudor/frontend/conf/MvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/com/tudor/frontend/conf/RestProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/classes/java/main/com/tudor/frontend/conf/RestProperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/com/tudor/frontend/controller/ArticleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/com/tudor/frontend/controller/ErrorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/com/tudor/frontend/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/com/tudor/frontend/gateway/ArticleGateway.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/com/tudor/frontend/gateway/CategoryGateway.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/com/tudor/frontend/gateway/UserGateway.class" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/classes/java/main/com/tudor/frontend/gateway/UserGateway.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/com/tudor/frontend/gateway/impl/ArticleGatewayImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/com/tudor/frontend/gateway/impl/CategoryGatewayImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/com/tudor/frontend/gateway/impl/UserGatewayImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/templates/article/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/templates/article/details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/templates/article/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/templates/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/templates/fragments/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/templates/fragments/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/templates/fragments/menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/templates/hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/templates/user/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/templates/user/details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/classes/java/main/templates/user/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/gateway/ArticleGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/gateway/ArticleGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/gateway/impl/ArticleGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/gateway/impl/ArticleGatewayImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/templates/article/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/templates/article/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/templates/article/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/templates/article/details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/templates/article/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/templates/article/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/templates/category/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/templates/category/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/templates/fragments/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/templates/fragments/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/../backend/backend/.gradle/" />
+    <ignored path="$PROJECT_DIR$/../backend/backend/build/" />
+    <ignored path="$PROJECT_DIR$/../backend/backend/out/" />
+    <ignored path="$PROJECT_DIR$/common/.gradle/" />
+    <ignored path="$PROJECT_DIR$/common/build/" />
+    <ignored path="$PROJECT_DIR$/common/out/" />
+    <ignored path="$PROJECT_DIR$/backend/.gradle/" />
+    <ignored path="$PROJECT_DIR$/backend/build/" />
+    <ignored path="$PROJECT_DIR$/backend/out/" />
+    <ignored path="$PROJECT_DIR$/backend/backend/" />
+    <ignored path="$PROJECT_DIR$/frontend/.gradle/" />
+    <ignored path="$PROJECT_DIR$/frontend/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/NewsAgency$BackendApplication.ic" NAME="BackendApplication Coverage Results" MODIFIED="1526921109850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.tudor.backend.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/LostPet$BackendApplication.ic" NAME="BackendApplication Coverage Results" MODIFIED="1549666383802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.tudor.frontend.conf.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/LostPet$LostPet_Project_backend__clean_.ic" NAME="LostPet_Project:backend [clean] Coverage Results" MODIFIED="1547628319841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="lost-pet@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="lost-pet@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="lost-pet@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="lost-pet: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="lost-pet@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="lost-pet: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="listing: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="lost-pet@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="lost-pet: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="listing_breed: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/backend">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/../backend/backend">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/backend">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/common">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/frontend">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LostPet" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/chat/controller/ChatController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/chat/model/ChatMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
+              <folding>
+                <element signature="e#849#850#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/NotificationService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="60" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>e</find>
+      <find>find</find>
+      <find>findby</find>
+      <find>string</find>
+      <find>map</find>
+      <find>sec</find>
+      <find>message</find>
+      <find>ha</find>
+      <find>greetings</find>
+      <find>/app</find>
+      <find>hello</find>
+      <find>topic</find>
+      <find>chat-web</find>
+      <find>/chat-websocket</find>
+      <find>/user_chat</find>
+      <find>websocket</find>
+      <find>lost_pet_chat</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/Greeting.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com.lostdog.backend.websocketdemo/controller/ChatController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/ChatController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com.lostdog.backend.websocketdemo/config/WebSocketConfig.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/WebSocketConfig.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/HelloMessage.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/BackendApplication.java" />
+        <option value="$PROJECT_DIR$/backend/build.gradle" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/tudor/dto/ChatComment.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/ChatApi.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mapper/CommentMapper.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mapper/ChatMapper.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/ChatApiImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/repository/CommentRepository.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/repository/ListingRepository.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/repository/ChatRepository.java" />
+        <option value="$PROJECT_DIR$/backend/build/generated/source/apt/main/com/lostpet/backend/mapper/ChatMapperImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mapper/ChatMappper.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/tudor/dto/UsernameIdDTO.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/ChatCommentApi.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/ChatCommentApiImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/ChatCommentRestController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/repository/ChatCommentRepository.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/ChatRestController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/ChatService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/entity/Chat.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/tudor/dto/ChatDTO.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/ChatServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mapper/impl/ChatCommentMapperImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/ChatCommentService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mapper/ChatCommentMapper.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/ChatCommentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/entity/ChatComment.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/tudor/dto/ChatCommentDTO.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/chat/model/ChatMessage.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/UserRestApi.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/UserRestController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/UserService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/BreedService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/BreedServiceImpl.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/entity/Breed.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/BreedRestController.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/BreedApi.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/storage/StorageProperties.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mail/services/MailService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/SimpleCORSFilter.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/chat/config/WebSocketConfig.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/NotificationService.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/chat/controller/ChatController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="232" />
+    <option name="y" value="-27" />
+    <option name="width" value="1096" />
+    <option name="height" value="1100" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="true" />
+      <hideEmptyPackages ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest" />
+    <property name="last_opened_file_path" value="$USER_HOME$/test_lostPet_export" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.16116504" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.lostpet.backend.mapper.impl" />
+      <recent name="com.lostpet.backend.mapper" />
+      <recent name="com.lostpet.backend.service.impl" />
+      <recent name="com.lostpet.backend.service" />
+      <recent name="com.lostpet.backend.rest.impl" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.lostpet.backend" />
+      <recent name="com.lostpet.backend.rest" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cabau\Desktop\ProiectareSoftware\LostPet_Project1\LostPet_Project\backend\src\main\java" />
+      <recent name="C:\Users\cabau\Desktop\ProiectareSoftware\LostPet_Project1\LostPet_Project\backend\src\main\java\com\lostdog\backend\mail" />
+      <recent name="C:\Users\cabau\Desktop\ProiectareSoftware\LostPet_Project1\LostPet_Project\templates" />
+      <recent name="C:\Users\cabau\Desktop\ProiectareSoftware\LostPet_Project1\LostPet_Project\backend\src\main\resources\templates" />
+      <recent name="C:\Users\cabau\Desktop\ProiectareSoftware\NewsAgency\backend\src\main\java\com\tudor\backend" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lostdog.backend.mail.connection" />
+      <recent name="com.lostdog.backend.mail" />
+      <recent name="com.tudor.frontend.gateway.impl" />
+      <recent name="com.tudor.frontend.gateway" />
+      <recent name="com.tudor.frontend.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cabau\Desktop\ProiectareSoftware\LostPet_Project1\LostPet_Project\backend\src\main\resources\templates" />
+      <recent name="C:\Users\cabau\Desktop\ProiectareSoftware\LostPet_Project1\LostPet_Project\backend\src\main\resources" />
+      <recent name="C:\Users\cabau\Desktop\ProiectareSoftware\LostPet_Project1\LostPet_Project\upload-dir" />
+      <recent name="C:\Users\cabau\Desktop\ProiectareSoftware\LostPet_Project1\LostPet_Project\backend\src\main\java\com\lostpet\backend\storage" />
+      <recent name="C:\Users\cabau\Desktop\ProiectareSoftware\NewsAgency\frontend\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+    <option name="contentProportion" value="0.16422765" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.BackendApplication">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LostPet_Project [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="LostPet_Project [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="LostPet_Project:backend [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="NewsAgency []" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="NewsAgency [bootRun]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="NewsAgency [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="backend_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tudor.frontend.conf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lostpet.backend.BackendApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FrontendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="frontend_main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tudor.frontend.FrontendApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.NewsAgency []" />
+      <item itemvalue="Gradle.NewsAgency [bootRun]" />
+      <item itemvalue="Gradle.NewsAgency [build]" />
+      <item itemvalue="Gradle.LostPet_Project:backend [clean]" />
+      <item itemvalue="Gradle.LostPet_Project [clean]" />
+      <item itemvalue="Gradle.LostPet_Project [build]" />
+      <item itemvalue="Spring Boot.FrontendApplication" />
+      <item itemvalue="Spring Boot.BackendApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.BackendApplication" />
+        <item itemvalue="Gradle.LostPet_Project [build]" />
+        <item itemvalue="Gradle.LostPet_Project [clean]" />
+        <item itemvalue="Gradle.NewsAgency [build]" />
+        <item itemvalue="Gradle.LostPet_Project:backend [clean]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b23c223-b6de-4f64-a267-16e32579948d" name="Default" comment="" />
+      <created>1526122094898</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1526122094898</updated>
+      <workItem from="1526122098721" duration="10322000" />
+      <workItem from="1526132445021" duration="1460000" />
+      <workItem from="1526134343099" duration="8690000" />
+      <workItem from="1526143052283" duration="3410000" />
+      <workItem from="1526208084020" duration="19906000" />
+      <workItem from="1526585739087" duration="653000" />
+      <workItem from="1526836162946" duration="7898000" />
+      <workItem from="1526920444243" duration="8655000" />
+      <workItem from="1526933369630" duration="5778000" />
+      <workItem from="1526982118564" duration="25062000" />
+      <workItem from="1527014697750" duration="564000" />
+      <workItem from="1527103485731" duration="1748000" />
+      <workItem from="1527343868026" duration="154000" />
+      <workItem from="1529390716711" duration="285000" />
+      <workItem from="1540919703158" duration="10000" />
+      <workItem from="1540925920649" duration="1272000" />
+      <workItem from="1540979941407" duration="598000" />
+      <workItem from="1540988000452" duration="1269000" />
+      <workItem from="1541409593660" duration="610000" />
+      <workItem from="1541441856518" duration="640000" />
+      <workItem from="1541515958615" duration="1238000" />
+      <workItem from="1541622751480" duration="996000" />
+      <workItem from="1541699400632" duration="5000" />
+      <workItem from="1541776296276" duration="956000" />
+      <workItem from="1543944165926" duration="5224000" />
+      <workItem from="1543952413130" duration="2036000" />
+      <workItem from="1544203776265" duration="1513000" />
+      <workItem from="1544270569205" duration="1947000" />
+      <workItem from="1544279401388" duration="1249000" />
+      <workItem from="1544280687584" duration="2106000" />
+      <workItem from="1544350442459" duration="263000" />
+      <workItem from="1544350796263" duration="13850000" />
+      <workItem from="1544459113724" duration="2500000" />
+      <workItem from="1544542009532" duration="598000" />
+      <workItem from="1544649974506" duration="13000" />
+      <workItem from="1546520076011" duration="10441000" />
+      <workItem from="1546600822944" duration="272000" />
+      <workItem from="1546605327602" duration="10255000" />
+      <workItem from="1546777910579" duration="11833000" />
+      <workItem from="1546874996464" duration="1254000" />
+      <workItem from="1547456117184" duration="60000" />
+      <workItem from="1547564124215" duration="3873000" />
+      <workItem from="1547628210820" duration="5802000" />
+      <workItem from="1547706787557" duration="5061000" />
+      <workItem from="1549475677132" duration="23971000" />
+      <workItem from="1549629240822" duration="35862000" />
+      <workItem from="1549729357913" duration="60730000" />
+      <workItem from="1553443916946" duration="2235000" />
+      <workItem from="1556199504724" duration="1352000" />
+      <workItem from="1556205924821" duration="631000" />
+      <workItem from="1558460904691" duration="60000" />
+      <workItem from="1563361291692" duration="74000" />
+      <workItem from="1563361569876" duration="188000" />
+      <workItem from="1563362198920" duration="22712000" />
+      <workItem from="1563977961550" duration="2770000" />
+      <workItem from="1569062945954" duration="90000" />
+    </task>
+    <task id="LOCAL-00001" summary="sec comm">
+      <created>1526233970128</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526233970128</updated>
+    </task>
+    <task id="LOCAL-00002" summary="sec comm">
+      <created>1526847640043</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526847640043</updated>
+    </task>
+    <task id="LOCAL-00003" summary="sec comm">
+      <created>1527015149407</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1527015149407</updated>
+    </task>
+    <task id="LOCAL-00004" summary="sec comm">
+      <created>1527015216649</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1527015216649</updated>
+    </task>
+    <task id="LOCAL-00005" summary="sec comm">
+      <created>1527015241248</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1527015241248</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="333004000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984227" visible="true" weight="0.18176973" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" sideWeight="0.50157726" side_tool="true" weight="0.23027718" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.25135428" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48880598" weight="0.32827735" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.68710023" weight="0.39978212" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3278867" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.32897604" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3128998" side_tool="true" weight="0.39978212" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.48987207" weight="0.32827735" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32897604" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4989339" weight="0.32897604" />
+      <window_info anchor="bottom" id="Terminal" order="14" weight="0.32897604" />
+      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32897604" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="16" weight="0.32897604" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="17" visible="true" weight="0.33261105" />
+      <window_info anchor="bottom" id="Docker" order="18" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" sideWeight="0.49837664" visible="true" weight="0.1130064" />
+      <window_info anchor="right" id="Database" order="7" weight="0.25053304" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32889125" />
+      <window_info anchor="right" id="Coverage" order="11" sideWeight="0.5016234" side_tool="true" visible="true" weight="0.1130064" />
+      <window_info anchor="right" id="Maven" order="12" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sec comm" />
+    <option name="LAST_COMMIT_MESSAGE" value="sec comm" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/UserController.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/UserController.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/UserController.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/UserController.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/UserController.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/UserController.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/gateway/impl/UserGatewayImpl.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/ArticleController.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/ArticleController.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/gateway/impl/ArticleGatewayImpl.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/gateway/impl/ArticleGatewayImpl.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/ArticleController.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/ArticleController.java</url>
+          <line>79</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/ArticleController.java</url>
+          <line>101</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/gateway/impl/CategoryGatewayImpl.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/gateway/impl/CategoryGatewayImpl.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/gateway/impl/CategoryGatewayImpl.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/gateway/impl/CategoryGatewayImpl.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/gateway/impl/CategoryGatewayImpl.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/CategoryRestController.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/gateway/impl/UserGatewayImpl.java</url>
+          <line>80</line>
+          <properties />
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/gateway/impl/UserGatewayImpl.java</url>
+          <line>79</line>
+          <properties />
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/gateway/impl/UserGatewayImpl.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/ArticleController.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/ArticleController.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/ArticleController.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/ArticleController.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mail/services/MailService.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/chat/controller/ChatController.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/CategoryRestController.java</url>
+          <line>28</line>
+          <properties class="com.lostpet.backend.rest.impl.CategoryRestController">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((StringMessageConverter)((java.util.ArrayList)((CompositeMessageConverter)messagingTemplate.converter).converters).get(0)).defaultCharset" custom="org.springframework.messaging.converter.CompositeMessageConverter,java.util.ArrayList,org.springframework.messaging.converter.StringMessageConverter" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LostPet$BackendApplication.ic" NAME="BackendApplication Coverage Results" MODIFIED="1563448951114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.tudor.frontend.conf.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/BreedRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/BreedApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/entity/ChatComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.29/ae3f9bea9f746a6d7b1f6804935853846088df31/tomcat-embed-core-8.5.29-sources.jar!/javax/servlet/ServletRequest.java" />
+    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/templates/error.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/templates/dog-face.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.29/ae3f9bea9f746a6d7b1f6804935853846088df31/tomcat-embed-core-8.5.29-sources.jar!/org/apache/tomcat/util/http/fileupload/FileUploadBase.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.0.1.RELEASE/e4f10fbe21036deaf8a127b5cff982cbde0be845/spring-boot-autoconfigure-2.0.1.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/servlet/MultipartProperties.java" />
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/FileSystemStorageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/nio/file/Files.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50099">
+          <caret line="3034" column="63" selection-start-line="3034" selection-start-column="63" selection-end-line="3034" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/nio/file/CopyOption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/storage/StorageException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/FileUploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/StorageApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/storage/StorageFileNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/storage/StorageProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mail/services/MailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#896#1130#0" expanded="true" />
+            <element signature="e#1129#1130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mail/consumers/MainConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/build/generated/source/apt/main/com/lostpet/backend/mapper/CommentMapperImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/CommentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/mapper/CommentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/SimpleCORSFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/UserRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="73" column="28" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/ChatCommentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/NotificationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.0.5.RELEASE/5b55345ef3687aaeb3d9beb63a648e61ccb2d08b/spring-messaging-5.0.5.RELEASE-sources.jar!/org/springframework/messaging/core/GenericMessagingTemplate.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.0.5.RELEASE/5b55345ef3687aaeb3d9beb63a648e61ccb2d08b/spring-messaging-5.0.5.RELEASE-sources.jar!/org/springframework/messaging/handler/annotation/MessageMapping.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.0.5.RELEASE/5b55345ef3687aaeb3d9beb63a648e61ccb2d08b/spring-messaging-5.0.5.RELEASE-sources.jar!/org/springframework/messaging/handler/annotation/SendTo.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/security/Principal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/ChatServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/impl/ChatRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/ChatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/rest/ChatApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.0.5.RELEASE/5b55345ef3687aaeb3d9beb63a648e61ccb2d08b/spring-messaging-5.0.5.RELEASE-sources.jar!/org/springframework/messaging/simp/config/MessageBrokerRegistry.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.0.5.RELEASE/5b55345ef3687aaeb3d9beb63a648e61ccb2d08b/spring-messaging-5.0.5.RELEASE-sources.jar!/org/springframework/messaging/Message.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.0.5.RELEASE/5b55345ef3687aaeb3d9beb63a648e61ccb2d08b/spring-messaging-5.0.5.RELEASE-sources.jar!/org/springframework/messaging/simp/config/AbstractMessageBrokerConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/chat/config/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="60" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/tudor/dto/Notification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#122#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main/java/com/tudor/frontend/controller/ArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.0.5.RELEASE/5b55345ef3687aaeb3d9beb63a648e61ccb2d08b/spring-messaging-5.0.5.RELEASE-sources.jar!/org/springframework/messaging/handler/invocation/InvocableHandlerMethod.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.0.5.RELEASE/5b55345ef3687aaeb3d9beb63a648e61ccb2d08b/spring-messaging-5.0.5.RELEASE-sources.jar!/org/springframework/messaging/handler/invocation/AbstractMethodMessageHandler.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.0.5.RELEASE/5b55345ef3687aaeb3d9beb63a648e61ccb2d08b/spring-messaging-5.0.5.RELEASE-sources.jar!/org/springframework/messaging/support/ExecutorSubscribableChannel.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.0.5.RELEASE/5b55345ef3687aaeb3d9beb63a648e61ccb2d08b/spring-messaging-5.0.5.RELEASE-sources.jar!/org/springframework/messaging/simp/annotation/support/SimpAnnotationMethodMessageHandler.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.0.5.RELEASE/5b55345ef3687aaeb3d9beb63a648e61ccb2d08b/spring-messaging-5.0.5.RELEASE-sources.jar!/org/springframework/messaging/core/AbstractMessageSendingTemplate.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.0.5.RELEASE/5b55345ef3687aaeb3d9beb63a648e61ccb2d08b/spring-messaging-5.0.5.RELEASE-sources.jar!/org/springframework/messaging/simp/SimpMessagingTemplate.java" />
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/chat/controller/ChatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/chat/model/ChatMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#849#850#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/lostpet/backend/service/impl/NotificationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="60" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="gradleExecuteTaskHistory">
+    <option value="$PROJECT_DIR$" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring|backend_main|backend</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: junit:junit:4.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
